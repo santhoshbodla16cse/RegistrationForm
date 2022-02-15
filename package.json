@@ -21,7 +21,7 @@
     "hbs": "^4.1.1",
     "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
-    "mongoose": "^5.11.19",
+    "mongoose": "^5.11.15",
     "nodemon": "^2.0.7",
     "validator": "^13.5.2"
   }

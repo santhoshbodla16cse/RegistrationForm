@@ -34,7 +34,8 @@ const UserSchema = new mongoose.Schema({
 //token creation
 UserSchema.methods.generateAuthToken = async function(){
   try{
-    const token = jwt.sign({_id:this._id.toString()},process.env.SECRET_KEY);
+    console.log("i enter jwt")
+    const token = jwt.sign({_id:this._id.toString()},"mynameissanthoshiamthirtyfiveyae");
     this.tokens = this.tokens.concat({token:token});
     await this.save(); //after adding the token to the above tokens field we neeed to call the save method again to store data in db, it return promise so we await
     return token;

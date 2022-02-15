@@ -50,7 +50,7 @@ router.get('/details',async(req,res)=>{
     
     try{
         
-        const {page =1,limit=10,percent_limit = 60} = req.query;
+        const {page =1,limit=12,percent_limit = 60} = req.query; //destructuring
         function filterBy12thpercent(item) {
             if (item.per_12>percent_limit) {
               return true

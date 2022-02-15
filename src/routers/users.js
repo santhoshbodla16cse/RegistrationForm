@@ -74,7 +74,7 @@ else{
         name : req.body.name,
         confirmpassword : req.body.confirmpassword
       })
-
+      
       const token = await user1.generateAuthToken();
       console.log(token)
      
